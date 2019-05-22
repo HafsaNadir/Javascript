@@ -17,6 +17,23 @@ if (condition) {
 console.log(age) // Output: ReferenceError: age is not defined
 const age=18
 
+let MY_FAV=7;
+
+if (MY_FAV === 7) { 
+    // this is fine and creates a block scoped MY_FAV variable 
+    // (works equally well with let to declare a block scoped non const variable)
+    const MY_FAV = 20;
+
+    // MY_FAV is now 20
+    console.log('my favorite number is ' + MY_FAV);
+
+    // this gets hoisted into the global context and throws an error
+   // var MY_FAV = 20;
+}
+
+// MY_FAV is still 7
+console.log('my favorite number is ' + MY_FAV);
+
 //ES5 
 console.log(a) // undefined
 var a=100

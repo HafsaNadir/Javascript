@@ -1,22 +1,23 @@
-//forEach
 const array=[6,7,8]
+const obj = { name: "hafsa", age:"19"}
+const str="blow"
 
+//forEach
 array.forEach(element => {
   console.log(element)  
 })
+
+str.forEach(i=> console.log(i)) //str.forEach is not a function
 
 //for in
 for(let i in array)
 {
     console.log(array[i])
 }
-const obj = { name: "hafsa", age:"19"}
-
 for(let i in obj)
 {
     console.log(obj[i])
 }
-const str="blow"
 for(let i in str)
 {
     console.log(str[i])

@@ -6,8 +6,8 @@ class Product {
     }
     display()
     {
-        console.log(`Name of book is ${this.name}`)
-        console.log(`Price is ${this.price}`)
+        console.log(`Name of book is ${this.name}`) //Name of book is the sun and her flowers
+        console.log(`Price is ${this.price}`) //Price is $5
     }
 }
 class Book extends Product {
@@ -19,7 +19,7 @@ class Book extends Product {
     display()
     {
         super.display()
-        console.log(`Author of book is ${this.author}`)
+        console.log(`Author of book is ${this.author}`) //Author of book is rupi kaur
     }
 }
 

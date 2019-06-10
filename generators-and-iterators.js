@@ -35,3 +35,18 @@ let emp2 = getEmployees()
 emp2.next() //function is started
             //john
 emp2.next() //rick
+
+//example
+function* display()
+{
+    console.log('this line will be executed first')
+    yield 'hello'
+    console.log('this line will be executed after a pause')
+    yield 'world'
+}
+const output = display()
+console.log(output.next().value) //this line will be executed first
+                                 //hello
+console.log(output.next().value) //this line will be executed after a pause
+                                 //world
+console.log(output.next().value) //undefined

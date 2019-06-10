@@ -38,3 +38,4 @@ console.log(members.has('Xavier')) //false
 console.log(members.has('Marcus')) //true
 //And you can also retrieve values from a Map, by passing a key to the .get() method
 console.log(members.get('Evelyn')) //75.68
+console.log(members.size) //3
